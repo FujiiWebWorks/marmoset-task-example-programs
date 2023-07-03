@@ -1,0 +1,21 @@
+[default]
+#screen
+screen.background.color.rgb255.r=0
+screen.background.color.rgb255.g=0
+screen.background.color.rgb255.b=0
+screen.background.color.r=0
+screen.background.color.g=-1
+screen.background.color.b=0
+
+# feeder COM 
+feeder.device.comport=COM6
+feeder.device.use=false
+feeder.deivce.drink=true
+
+# DIO/Aout
+hard.ttlaout.1.device.use=false
+hard.ttlaout.1.device.devicename=dev1
+hard.ttlaout.1.device.nidaq.use=true
+hard.ttlaout.1.device.nidaq.ttlonly=false
+
+
