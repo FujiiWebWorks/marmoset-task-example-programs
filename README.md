@@ -3,6 +3,9 @@
 
 https://marmoset-task-example.netlify.app/
 
+
+![favicon](https://marmoset-task-example.netlify.app/img/favicon.ico "favicon")
+
 本リポジトリでは、各課題に関するドキュメントやプログラムのソースコードを公開しています。
 
 - [遅延見本合わせ課題（/delayed-matching-task）](/delayed-matching-task)
