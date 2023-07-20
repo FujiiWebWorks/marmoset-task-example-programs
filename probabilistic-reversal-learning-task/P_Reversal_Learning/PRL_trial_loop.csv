@@ -1,0 +1,2 @@
+TRIAL,target_image,dist_image,block_csv
+1,A.png,B.png,PRL_block_loop.csv

@@ -1,0 +1,701 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="2022.2.5">
+  <Settings>
+    <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
+    <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
+    <Param val="" valType="str" updates="None" name="Completed URL"/>
+    <Param val="auto" valType="str" updates="None" name="Data file delimiter"/>
+    <Param val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code" updates="None" name="Data filename"/>
+    <Param val="True" valType="bool" updates="None" name="Enable Escape"/>
+    <Param val="{'participant': 'f&quot;{randint(0, 999999):06.0f}&quot;', 'session': '001', 'reward_serial_COM': 'none', 'wait_first_sec': '3', 'trans_pos_x': '-0.0234', 'trans_pos_y': '-0.02205', 'trans_size_x': '0.5', 'trans_size_y': '0.5', 'mouse_cursor': '0'}" valType="code" updates="None" name="Experiment info"/>
+    <Param val="True" valType="bool" updates="None" name="Force stereo"/>
+    <Param val="False" valType="bool" updates="None" name="Full-screen window"/>
+    <Param val="" valType="str" updates="None" name="HTML path"/>
+    <Param val="" valType="str" updates="None" name="Incomplete URL"/>
+    <Param val="testMonitor" valType="str" updates="None" name="Monitor"/>
+    <Param val="[]" valType="list" updates="None" name="Resources"/>
+    <Param val="False" valType="bool" updates="None" name="Save csv file"/>
+    <Param val="False" valType="bool" updates="None" name="Save excel file"/>
+    <Param val="False" valType="bool" updates="None" name="Save hdf5 file"/>
+    <Param val="True" valType="bool" updates="None" name="Save log file"/>
+    <Param val="True" valType="bool" updates="None" name="Save psydat file"/>
+    <Param val="True" valType="bool" updates="None" name="Save wide csv file"/>
+    <Param val="1" valType="num" updates="None" name="Screen"/>
+    <Param val="True" valType="bool" updates="None" name="Show info dlg"/>
+    <Param val="False" valType="bool" updates="None" name="Show mouse"/>
+    <Param val="height" valType="str" updates="None" name="Units"/>
+    <Param val="" valType="str" updates="None" name="Use version"/>
+    <Param val="[1280, 900]" valType="list" updates="None" name="Window size (pixels)"/>
+    <Param val="avg" valType="str" updates="None" name="blendMode"/>
+    <Param val="$[-1,-1,-1]" valType="color" updates="None" name="color"/>
+    <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+    <Param val="100.1.1.1" valType="str" updates="None" name="elAddress"/>
+    <Param val="FILTER_LEVEL_2" valType="str" updates="None" name="elDataFiltering"/>
+    <Param val="FILTER_LEVEL_OFF" valType="str" updates="None" name="elLiveFiltering"/>
+    <Param val="EYELINK 1000 DESKTOP" valType="str" updates="None" name="elModel"/>
+    <Param val="ELLIPSE_FIT" valType="str" updates="None" name="elPupilAlgorithm"/>
+    <Param val="PUPIL_AREA" valType="str" updates="None" name="elPupilMeasure"/>
+    <Param val="1000" valType="num" updates="None" name="elSampleRate"/>
+    <Param val="False" valType="bool" updates="None" name="elSimMode"/>
+    <Param val="RIGHT_EYE" valType="str" updates="None" name="elTrackEyes"/>
+    <Param val="PUPIL_CR_TRACKING" valType="str" updates="None" name="elTrackingMode"/>
+    <Param val="BuilderProbabilisticReservalLearning-pp20220205" valType="str" updates="None" name="expName"/>
+    <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
+    <Param val="None" valType="str" updates="None" name="eyetracker"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="gpAddress"/>
+    <Param val="4242" valType="num" updates="None" name="gpPort"/>
+    <Param val="ioHub" valType="str" updates="None" name="keyboardBackend"/>
+    <Param val="exp" valType="code" updates="None" name="logging level"/>
+    <Param val="('MIDDLE_BUTTON',)" valType="list" updates="None" name="mgBlink"/>
+    <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
+    <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>
+    <Param val="0.6" valType="num" updates="None" name="plConfidenceThreshold"/>
+    <Param val="True" valType="bool" updates="None" name="plPupilCaptureRecordingEnabled"/>
+    <Param val="" valType="str" updates="None" name="plPupilCaptureRecordingLocation"/>
+    <Param val="127.0.0.1" valType="str" updates="None" name="plPupilRemoteAddress"/>
+    <Param val="50020" valType="num" updates="None" name="plPupilRemotePort"/>
+    <Param val="1000" valType="num" updates="None" name="plPupilRemoteTimeoutMs"/>
+    <Param val="False" valType="bool" updates="None" name="plPupillometryOnly"/>
+    <Param val="psychopy_iohub_surface" valType="str" updates="None" name="plSurfaceName"/>
+    <Param val="" valType="str" updates="None" name="tbLicenseFile"/>
+    <Param val="" valType="str" updates="None" name="tbModel"/>
+    <Param val="60" valType="num" updates="None" name="tbSampleRate"/>
+    <Param val="" valType="str" updates="None" name="tbSerialNo"/>
+  </Settings>
+  <Routines>
+    <Routine name="init">
+      <CodeComponent name="code">
+        <Param val="import os&amp;#10;curPass = os.getcwd();&amp;#10;print(curPass);&amp;#10;&amp;#10;from BuilderSession import BuilderSession&amp;#10;numOfSession=1;&amp;#10;&amp;#10;session = BuilderSession();&amp;#10;session.ppEnv.codeFINISHED = FINISHED;&amp;#10;session.ppEnv.codeSTARTED = STARTED;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+      <PolygonComponent name="polygon_t_init">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="blue" valType="color" updates="set every frame" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="set every frame" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_t_init" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="0.2" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+    </Routine>
+    <Routine name="reward_test">
+      <PolygonComponent name="polygon_reward_test">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_reward_test" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.3, 0.3)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="99999999" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <MouseComponent name="mouse_reward_test">
+        <Param val="polygon_reward_test" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="any click" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_reward_test" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="time (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="99999999" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="experiment" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <CodeComponent name="code_reward_test">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="print(&quot;begin routine code_reward_test&quot;);&amp;#10;mouse_reward_test.setVisible(int(expInfo['mouse_cursor']));" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="print(&quot;end routine code_reward_test&quot;);&amp;#10;#currentTask.feeder.feed(1);&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_reward_test" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="wait_first_blank">
+      <PolygonComponent name="polygon_wait_first_blank">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_wait_first_blank" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="triangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.0, 0.0)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="float(expInfo['wait_first_sec']  )" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <CodeComponent name="code_wait_first_blank">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="print(&quot;begin routine code_wait_first_blank&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="print(&quot;end routine code_wait_first_blank&quot;);&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_wait_first_blank" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="init_task">
+      <CodeComponent name="code_init_task">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="from TaskProbabilisticReversalLearning import TaskProbabilisticReversalLearning&amp;#10;&amp;#10;session.init_session(win,expInfo);&amp;#10;task = TaskProbabilisticReversalLearning(session, expInfo);&amp;#10;session.set_task(task);&amp;#10;#&amp;#10;currentTask = session.getCurrentTask();&amp;#10;currentTask.begin();&amp;#10;" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="session.init;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="currentTask.end();&amp;#10;" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_init_task" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="warning_square">
+      <PolygonComponent name="polygon_warning_square">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_warning_square" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="currentTask.seq_warning_square.warning_square.getXY()" valType="list" updates="set every frame" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="currentTask.seq_warning_square.warning_square.getSize()" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_warning_square.warning_square.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <MouseComponent name="mouse_warning_square">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_warning_square" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_warning_square.warning_square.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <CodeComponent name="code_warning_square">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="currentTask.curTrialValue.stim_distractor.x_pos = distractor_x_pos;&amp;#10;currentTask.curTrialValue.stim_distractor.y_pos = distractor_y_pos;&amp;#10;currentTask.curTrialValue.stim_distractor.x_size = distractor_x_size;&amp;#10;currentTask.curTrialValue.stim_distractor.y_size = distractor_y_size;&amp;#10;currentTask.curTrialValue.stim_target.x_pos = target_x_pos;&amp;#10;currentTask.curTrialValue.stim_target.y_pos = target_y_pos;&amp;#10;currentTask.curTrialValue.stim_target.x_size = target_x_size;&amp;#10;currentTask.curTrialValue.stim_target.y_size = target_y_size;&amp;#10;currentTask.curTrialValue.target_LR = target_LR;&amp;#10;currentTask.curTrialValue.correct_LR = correct_LR;&amp;#10;currentTask.curTrialValue.trial_name = trial_name;&amp;#10;&amp;#10;currentTask.initialize( trials);&amp;#10;&amp;#10;curSeq = currentTask.seq_warning_square;&amp;#10;curSeq.warning_square.stim =polygon_warning_square;&amp;#10;curSeq.mouse = mouse_warning_square;&amp;#10;curSeq.blank.stim = polygon_warning_square_blank;&amp;#10;curSeq.onBeginRoutine();&amp;#10;&amp;#10;if currentTask.time_over:&amp;#10;    continueRoutine = False;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="if continueRoutine:&amp;#10;    curSeq.onOneFrame(routineTimer.getTime());&amp;#10;if not curSeq.isContinue() :&amp;#10;    continueRoutine = False;&amp;#10;    pass;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="curSeq.onEndRoutine();&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_warning_square" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="warning_square_blank">
+      <PolygonComponent name="polygon_warning_square_blank">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="set every frame" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="set every frame" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_warning_square_blank" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="triangle" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_warning_square.blank.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <CodeComponent name="code_warning_square_blank">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if currentTask.time_over:&amp;#10;    continueRoutine = False;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_warning_square_blank" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="reward_ITI">
+      <PolygonComponent name="polygon_reward_ITI">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_reward_ITI" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_reward_ITI.blank.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <CodeComponent name="code_reward_ITI">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="curSeq = currentTask.seq_reward_ITI;&amp;#10;curSeq.blank.stim = polygon_reward_ITI;&amp;#10;curSeq.onBeginRoutine();&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="curSeq.onOneFrame(routineTimer.getTime());&amp;#10;if not curSeq.isContinue() :&amp;#10;    continueRoutine = False;&amp;#10;    pass;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="curSeq.onEndRoutine();&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_reward_ITI" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="extra_ITI">
+      <PolygonComponent name="polygon_extra_ITI">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_extra_ITI" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="cross" valType="str" updates="None" name="shape"/>
+        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_extra_ITI.blank.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <CodeComponent name="code_extra_ITI">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="curSeq = currentTask.seq_extra_ITI;&amp;#10;curSeq.blank.stim = polygon_extra_ITI;&amp;#10;curSeq.onBeginRoutine();&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="curSeq.onOneFrame(routineTimer.getTime());&amp;#10;if not curSeq.isContinue() :&amp;#10;    continueRoutine = False;&amp;#10;    pass;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="curSeq.onEndRoutine();&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_extra_ITI" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="wait_last_blank">
+      <PolygonComponent name="polygon_wait_last_blank">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_wait_last_blank" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0)" valType="list" updates="set every frame" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="(2.0, 2.0)" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="99999999" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="norm" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <MouseComponent name="mouse_wait_last_blank">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_wait_last_blank" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="99999999" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <CodeComponent name="code_wait_last_blank">
+        <Param val="from LibWin.MouseExit import MouseExit&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="mouseExit = MouseExit(win);" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="mouse_wait_last_blank.setVisible(int(expInfo['mouse_cursor']));&amp;#10;mouseExit.eventMouse = mouse_wait_last_blank;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="flagExit = mouseExit.oneFrame();&amp;#10;if flagExit:&amp;#10;    continueRoutine = False;&amp;#10;    pass;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_wait_last_blank" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="stimuli_AB">
+      <ImageComponent name="image_stimuli_A">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$'resouce/image/' + target_image" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="image_stimuli_A" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="curSeq.target.getXY()" valType="list" updates="set every frame" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="curSeq.target.getSize()" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="curSeq.target.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <ImageComponent name="image_stimuli_B">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="$'resouce/image/' + dist_image" valType="file" updates="set every repeat" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="image_stimuli_B" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="curSeq.distractor.getXY()" valType="list" updates="set every frame" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="curSeq.distractor.getSize()" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="curSeq.distractor.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <PolygonComponent name="polygon_stimuli_AP">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_stimuli_AP" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="currentTask.seq_stimulus_pair.target.getXY()" valType="list" updates="set every frame" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="currentTask.seq_stimulus_pair.target.getSize()" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_stimulus_pair.target.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <PolygonComponent name="polygon_stimuli_BP">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="white" valType="color" updates="constant" name="fillColor"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="white" valType="color" updates="constant" name="lineColor"/>
+        <Param val="1" valType="num" updates="constant" name="lineWidth"/>
+        <Param val="4" valType="int" updates="constant" name="nVertices"/>
+        <Param val="polygon_stimuli_BP" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="currentTask.seq_stimulus_pair.distractor.getXY()" valType="list" updates="set every frame" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="rectangle" valType="str" updates="None" name="shape"/>
+        <Param val="currentTask.seq_stimulus_pair.distractor.getSize()" valType="list" updates="set every frame" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="currentTask.seq_stimulus_pair.distractor.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="list" updates="constant" name="vertices"/>
+      </PolygonComponent>
+      <MouseComponent name="mouse_stimuli_AB">
+        <Param val="" valType="list" updates="constant" name="clickable"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="never" valType="str" updates="constant" name="forceEndRoutineOnPress"/>
+        <Param val="mouse_stimuli_AB" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="newClicksOnly"/>
+        <Param val="never" valType="str" updates="None" name="saveMouseState"/>
+        <Param val="name," valType="list" updates="constant" name="saveParamsClickable"/>
+        <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="curSeq.target.getDuration()" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="mouse onset" valType="str" updates="constant" name="timeRelativeTo"/>
+      </MouseComponent>
+      <CodeComponent name="code_stimuli_AB">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="curSeq = currentTask.seq_stimuli_AB;&amp;#10;curSeq.target.stim     = image_stimuli_A;&amp;#10;curSeq.distractor.stim = image_stimuli_B;&amp;#10;curSeq.mouse = mouse_stimuli_AB;&amp;#10;curSeq.onBeginRoutine();&amp;#10;&amp;#10;if currentTask.time_over:&amp;#10;    continueRoutine = False;&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Py" valType="str" updates="None" name="Code Type"/>
+        <Param val="if continueRoutine:&amp;#10;    curSeq.onOneFrame(routineTimer.getTime());&amp;#10;if not curSeq.isContinue() :&amp;#10;    continueRoutine = False;&amp;#10;    pass;&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="curSeq.onEndRoutine();&amp;#10;" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="code_stimuli_AB" valType="code" updates="None" name="name"/>
+      </CodeComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="init"/>
+    <Routine name="reward_test"/>
+    <Routine name="wait_first_blank"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_session">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_session" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="trials_loop">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('TRIAL', 1), ('target_image', 'A.png'), ('dist_image', 'B.png')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="PRL_trial_loop.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials_loop" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'L'), ('trial_name', 'T_L_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'R'), ('trial_name', 'T_L_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', -0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', 0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'L'), ('correct_LR', 'R'), ('trial_name', 'T_L_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'R'), ('trial_name', 'T_R_C_R_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'L'), ('trial_name', 'T_R_C_L_80_PERCENT')]), OrderedDict([('target_x_pos', 0.39), ('target_y_pos', 0), ('target_x_size', 1), ('target_y_size', 1), ('distractor_x_pos', -0.39), ('distractor_y_pos', 0), ('distractor_x_size', 1), ('distractor_y_size', 1), ('target_LR', 'R'), ('correct_LR', 'L'), ('trial_name', 'T_R_C_L_80_PERCENT')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="PRL_block_loop.csv" valType="file"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="init_task"/>
+    <Routine name="warning_square"/>
+    <Routine name="warning_square_blank"/>
+    <Routine name="stimuli_AB"/>
+    <Routine name="reward_ITI"/>
+    <Routine name="extra_ITI"/>
+    <LoopTerminator name="trials"/>
+    <LoopTerminator name="trials_loop"/>
+    <Routine name="wait_last_blank"/>
+    <LoopTerminator name="trials_session"/>
+  </Flow>
+</PsychoPy2experiment>
