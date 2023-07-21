@@ -61,11 +61,11 @@ class Rec_data:
 
     def appendDataName(self, _trials, _dataName):
         expr = _trials.getExp();
-        
+
         if _dataName not in expr.dataNames:
             expr.dataNames.append(_dataName);
         pass;
-    
+
     def addMouseData(self, _mouse):
         obj = self.obj;
         obj.clicked_name = obj.name;
@@ -104,7 +104,7 @@ class Rec_data:
         self.prAddRecData(objname + '.mouse.x', obj.x);
         self.prAddRecData(objname + '.mouse.y', obj.y)
         pass;
-        
+
 
 class StimObject:
 
@@ -114,7 +114,7 @@ class StimObject:
         self.curVScreen = _curTask.curVScreen;
         self.stim = None;
         self.stimParam = None;
-        self.rec_data = None; 
+        self.rec_data = None;
         self.duration = 0.995;
         self.flagClicked = False;
         pass;
@@ -167,7 +167,7 @@ class Seq_base:
         self.mouseHold = None;
         #
         self.flagMouseCursor = int(self.curTask.curExpInfo['mouse_cursor']);
-        
+
         pass;
 
     def begin(self):
@@ -195,7 +195,7 @@ class Seq_base:
         if self.blank != None:
             sobj = self.blank;
             sobj.stim.setSize((0, 0));
-            
+
         pass;
         self.begin();
         pass;
@@ -203,7 +203,7 @@ class Seq_base:
     def onEndRoutine(self):
         for sobj in self.polygonList:
             sobj.rec_data.addRecData(self.curTask.curTrials);
-        
+
         if self.mouse != None:
             if self.flagContinue:
                 self.curTask.time_over = True;
@@ -225,7 +225,7 @@ class Seq_base:
 
     def isContinue(self):
         return self.flagContinue;
-    
+
     def mouseSt(self, _routineTime):
         if self.mouse != None:
             if self.flagMouseSt:
@@ -268,17 +268,17 @@ class Seq_base:
                         pass;
                         rec_data.addMouseData(mouse);
                         if gotValidClick:
-                            self.flagContinue = False  # abort routine on response    
-                            self.setTouched();            
+                            self.flagContinue = False  # abort routine on response
+                            self.setTouched();
                         pass;
                     else:
-                        pass;         
+                        pass;
                 else:
                     pass;
                 pass;
             pass;
         # print(pstr + '_end');
-        pass; 
+        pass;
 
     def mouseStMouseClick(self, _routineTime):
         pstr = 'mouseStMouseClick';
@@ -313,7 +313,7 @@ class Seq_base:
                             if gotValidClick:
                                 self.flagContinue = False  # abort routine on response
                                 self.setTouched();
-                
+
         pass;
         # print(pstr + '_end');
         pass;
@@ -337,20 +337,20 @@ class Seq_warning_square(Seq_base):
 
     def end(self):
         pass;
-        
+
     def onOneFrame(self, _routineTime):
         super().onOneFrame(_routineTime);
         pstr = 'seq_warning_square:oneFrame';
         self.mouseSt(_routineTime);
         # print(pstr + '_end');
         pass;
-        
+
 
 class Seq_stimuli_AB(Seq_base):
 
     def __init__(self, _curTask):
         super().__init__(_curTask);
-        
+
         self.target = StimObject(self);
         self.target.stimParam = self.curTrialValue.stim_target;
         #
@@ -392,14 +392,14 @@ class Seq_reward_ITI(Seq_base):
 
     def __init__(self, _curTask):
         super().__init__(_curTask);
-        self.flagFed = False; 
+        self.flagFed = False;
         self.flagPlayed = False;
         self.flagCorrect = False;
         self.flagIncorrect = False;
         self.sound_correct_reward = None;
         self.sound_incorrect_reward = None;
-        
-        self.sound_correct_reward = sound.Sound('resouce/sound/sin4KHz100ms_10msFadeInOut.wav', secs=0, stereo=True, hamming=False, name='sound_correct_reward');
+
+        self.sound_correct_reward = sound.Sound('resource/sound/sin4KHz100ms_10msFadeInOut.wav', secs=0, stereo=True, hamming=False, name='sound_correct_reward');
         self.sound_correct_reward.setVolume(1.0);
         #self.sound_incorrect_reward = sound.Sound('A', secs=0.1, stereo=True, hamming=False, name='sound_incorrect_reward');
         #self.sound_incorrect_reward.setVolume(1.0);
@@ -413,7 +413,7 @@ class Seq_reward_ITI(Seq_base):
         self.mouseSt(_routineTime);
         # print(pstr + '_end');
 
-        if True: 
+        if True:
             if self.flagFed:
                 pass;
             else:
@@ -445,7 +445,7 @@ class Seq_reward_ITI(Seq_base):
         self.blank.duration = self.curParam.ITI_duration_sec - 0.005;
         #
         self.flagPlayed = False;
-        self.flagFed = False; 
+        self.flagFed = False;
         #
         self.flagCorrect = False;
         self.flagIncorrect = False;
@@ -461,15 +461,15 @@ class Seq_reward_ITI(Seq_base):
         pass;
 
     def end(self):
-        _trials = self.curTask.curTrials; 
-        _trials.addData('selected', self.curTask.selected); 
-        _trials.addData('responseTime', self.curTask.responseTime); 
-        _trials.addData('correct', self.curTask.flagCorrect); 
-        _trials.addData('omission', self.curTask.flagOmission); 
-        _trials.addData('rewad_count', self.curTask.countReward); 
+        _trials = self.curTask.curTrials;
+        _trials.addData('selected', self.curTask.selected);
+        _trials.addData('responseTime', self.curTask.responseTime);
+        _trials.addData('correct', self.curTask.flagCorrect);
+        _trials.addData('omission', self.curTask.flagOmission);
+        _trials.addData('rewad_count', self.curTask.countReward);
         self.curTask.prReward();
         pass;
-    
+
 
 class Seq_extra_ITI(Seq_base):
 
@@ -488,7 +488,7 @@ class Seq_extra_ITI(Seq_base):
     def onOneFrame(self, _routineTime):
         super().onOneFrame(_routineTime);
         self.mouseSt(_routineTime);
-        
+
         if(self.curTask.flagCorrect):
             self.flagContinue = False;
         else:
@@ -496,7 +496,7 @@ class Seq_extra_ITI(Seq_base):
         pass;
 
 
-class ParamProbabilisticReversalLearning: 
+class ParamProbabilisticReversalLearning:
 
     def __init__(self):
         self.warning__x_pos = 0.0;
@@ -539,7 +539,7 @@ class StimParamObject:
         # tuple
         return (self.x_size, self.y_size);
 
-    
+
 class TrialValue:
 
     def __init__(self):
@@ -562,7 +562,7 @@ class StatusTask:
     def initialize(self):
         self.flagOmission = True;
         self.flagCorrect = False;
-        
+
 
 class BaseTask:
 
@@ -592,7 +592,7 @@ class BaseTask:
 
     def appendDataName(self, _trials, _dataName):
         expr = _trials.getExp();
-        
+
         if _dataName not in expr.dataNames:
             expr.dataNames.append(_dataName);
         pass;
@@ -639,7 +639,7 @@ class BaseTask:
     def setOptionReward(self, _option):
         self.optionReward = _option;
         pass;
-        
+
         pass;
 
     def prReward(self):
@@ -667,4 +667,3 @@ class TaskProbabilisticReversalLearning(BaseTask):
     def initialize(self, _trials):
         super().initialize(_trials);
         pass;
-    
