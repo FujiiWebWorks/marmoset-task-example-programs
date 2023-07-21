@@ -9,6 +9,7 @@ https://marmoset-task-example.netlify.app/
 本リポジトリでは、各課題に関するドキュメントやプログラムのソースコードを公開しています。
 
 - [遅延見本合わせ課題（/delayed-matching-task）](/delayed-matching-task)
+- [確率的逆転学習課題（/probabilistic-reversal-learning-task）](/probabilistic-reversal-learning-task)
 
 
 ----
